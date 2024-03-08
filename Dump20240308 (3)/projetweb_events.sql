@@ -16,28 +16,32 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `produits`
+-- Table structure for table `events`
 --
 
-DROP TABLE IF EXISTS `produits`;
+DROP TABLE IF EXISTS `events`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `produits` (
+CREATE TABLE `events` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(30) NOT NULL,
-  `description` varchar(200) NOT NULL,
-  `price` int NOT NULL,
-  PRIMARY KEY (`id`)
+  `title` varchar(30) NOT NULL,
+  `description` varchar(100) NOT NULL,
+  `status` varchar(20) NOT NULL,
+  `image` varchar(200) NOT NULL,
+  `start_time` datetime NOT NULL,
+  `end_time` datetime NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `title` (`title`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `produits`
+-- Dumping data for table `events`
 --
 
-LOCK TABLES `produits` WRITE;
-/*!40000 ALTER TABLE `produits` DISABLE KEYS */;
-/*!40000 ALTER TABLE `produits` ENABLE KEYS */;
+LOCK TABLES `events` WRITE;
+/*!40000 ALTER TABLE `events` DISABLE KEYS */;
+/*!40000 ALTER TABLE `events` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -49,4 +53,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-03-05 23:24:01
+-- Dump completed on 2024-03-08 15:46:17
