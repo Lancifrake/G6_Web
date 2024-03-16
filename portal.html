@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Portal-BDE</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Alexandria.css">
+    <link rel="stylesheet" href="assets/css/portal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/typing.css">
+</head>
+
+<body><div id="container" class="container">
+    <div class="form-container sign-up-container">
+        <form action method="POST">
+            <h1>Create Account</h1>
+            <input id="name" type="text" name="name" placeholder="Name" required />
+            <input id="username" type="text" name="username" placeholder="Username" required />
+            <input id="location" type="text" name="location" placeholder="Location" required />
+            <input id="password" type="password" name="password" pattern="^(?=.*[A-Z])(?=.*[0-9]).{8,}$" placeholder="Password" required title="Enter a password with A-Z and 0-9 and more than 7 characters"  />
+            <input id="email" type="Email" name="email" placeholder="Email" required pattern="^[a-zA-Z0-9._-]+@(gmail|outlook)\.com$" />
+            <button class="btn text-dark" style="background: #faae64;border-color: #faae64; color: var(--bs-emphasis-color);border-radius: 15px;font-size: 12px;font-size: 12px;font-weight: bold;" href="index.html">Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in-container">
+        <form action="#" method="POST">
+            <h1 class="mt-md-0 pb-md-0 mb-md-0 pb-xl-0">Sign in</h1>
+            <div class="text-center caption v-middle" style="font-size: -7px;">
+                <h1 class="cd-headline clip">
+                    <span class="cd-words-wrapper pt-md-0 mt-md-0 mb-md-0">
+                        <b class="is-visible" style="font-size: 25px;"><br />
+                            <span class="pt-xl-0 mt-xl-0 mb-xl-0" style="font-weight: normal;font-size: 41px;">or sign up 👉</span>
+                        </b>
+                    </span>
+                </h1>
+            </div>
+            <div></div>
+            <input type="text" placeholder="Username" required />
+            <input type="password" pattern="^(?=.*[A-Z])(?=.*[0-9]).{8,}$" placeholder="Password" required />
+            <a href="forgot.html">Forgot your password?</a>
+            <button style="background: #faae64;border-color: #faae64;color: var(--bs-emphasis-color);" href="welcome.html">Sign In</button>
+            <a class="btn" role="button" style="background: transparent;border-color: #faae64;color: var(--bs-emphasis-color);border-radius: 15px;font-size: 12px;font-weight: bold;" data-bs-target=" " href="index.html">GO TO ANONYMOUS</a>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left"><br /><br /><br /><br /><br />
+                <h1>Welcome Dear!</h1>
+                <p>Please provide a password with at least one capital letter and a number for the security of the account.</p><button id="signIn" class="ghost">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Dear !</h1>
+                <p> For a better experience on our website, you should create an account or sign in. This allows access to several site features.</p><button id="signUp" class="ghost">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/portal.js"></script>
+    <script src="assets/js/typing.js"></script>
+</body>
+
+</html>

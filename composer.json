@@ -1,0 +1,12 @@
+{
+    "require": {
+        "google/apiclient": "^2.15",
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6",
+        "league/oauth2-client": "^2.7",
+        "symfony/dotenv": "^5.4",
+        "symfony/mailer": "^5.4",
+        "symfony/google-mailer": "^5.4",
+        "hybridauth/hybridauth": "^3.11"
+    }
+}

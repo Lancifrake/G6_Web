@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Password-BDE</title>
+    <title>Login-BDE</title>
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
@@ -143,45 +143,13 @@ button{
         <div class="shape"></div>
     </div>
     <hr>
-    <form style="max-width: 500px; margin: 0 auto;" method="post" action="forgot.php">
-
-        <!-- Form for resetting password with specified width and centered -->
-        <h3 style="font-size: 20px;">Reset your password here!</h3>
-        
-        <!-- Label and input field for email -->
-        <label class="form-label" for="email">Email</label><input id="email" name="email" type="email" pattern="^[a-zA-Z0-9._-]+@(gmail|outlook)\.com$" placeholder="Email" required />
-
-        <!-- Label and input field for entering a new password with password visibility toggle -->
-        <label class="form-label" for="password">Enter your new password</label>
-        <div style="position: relative;">
-            <input type="password" id="password" name="new_password" pattern="^(?=.*[A-Z])(?=.*[0-9]).{8,}$" placeholder="Password" required>
-
-            <!-- Password visibility toggle icon -->
-            <span style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;" onclick="togglePasswordVisibility('password');">
-                👁️
-            </span>
-        </div>
-
-        <!-- Label and input field for confirming the new password -->
-        <label class="form-label" for="confirm-password">Confirm your password</label>
-        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
-        <br>
-
-        <!-- Button for submitting the form -->
-        
-        <div style="text-align: center;">
-            <a class="btn" style="border-color:#faae64; background:#faae64; font-family:Alexandria, sans-serif;" href="welcome.html">Log In</a>
-        </div>   
-    </form>
-    
-    <script>
-        // Function to toggle password visibility
-        function togglePasswordVisibility(inputId) {
-            const input = document.getElementById(inputId);
-            input.type = input.type === 'password' ? 'text' : 'password';
-        }
-    </script>
-    
+    <form>
+        <h3>Login</h3><label class="form-label form-label form-label form-label form-label" for="username">Username</label><input type="text" id="username" placeholder="Username" required=""><label class="form-label form-label form-label form-label form-label form-label" for="password">Password</label><input type="password" id="password" pattern="^(?=.*[A-Z])(?=.*[0-9]).{8,}$" placeholder="Password" required=""><button class="btn" style="border-color:#faae64;background:#faae64;font-family:Alexandria, sans-serif;" href="welcome.html">Log In</button>
+        <br><br><br><br><style media="screen"></style>
+        <a href="forgot.html" style="color: rgb(230, 102, 17); text-decoration: underline;">Forgot your password?</a>
+        <span style="margin-left: 10px; color: rgb(7, 6, 6); text-decoration: underline;"><a href="sign.html">No account?</a></span>
+        <br><br><br><br>
+    </form><!-- Start: BDE BAS A JOUR -->
     <footer class="text-center text-lg-start text-muted body-tertiary">
         <div><br><br></div>
         <section class="text-center mb-4" style="font-size: 22px;"><span data-aos="fade-left" data-aos-duration="1000" style="font-size: 32px;font-family: Alexandria, sans-serif;padding-top: 0px;margin-top: 2px;padding-bottom: 0px;margin-bottom: 1px;margin-right: 17px;height: 0px;width: 11px;"> FOLLOW US !</span><a class="btn btn-link btn-lg btn-floating text-dark m-1" role="button" data-aos="fade-left" data-aos-duration="1000" href="#!" data-mdb-ripple-color="dark"><i class="fab fa-facebook-f" style="font-size: 41px;color: #faae64;"></i></a><a class="btn btn-link btn-lg btn-floating text-dark m-1" role="button" href="#!" data-mdb-ripple-color="dark"><i class="fab fa-twitter" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500" style="font-size: 41px;color: #faae64;"></i></a><a class="btn btn-link btn-lg btn-floating text-dark m-1" role="button" href="#!" data-mdb-ripple-color="dark" style="color: #faae64;"><i class="fab fa-instagram" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000" style="font-size: 41px;color: #faae64;"></i></a><a class="btn btn-link btn-lg btn-floating text-dark m-1" role="button" href="#!" data-mdb-ripple-color="dark" style="color: #faae64;"><i class="fab fa-linkedin-in" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500" style="font-size: 41px;color: #faae64;"></i></a></section>
